@@ -11,6 +11,12 @@ declare(strict_types=1);
 
 namespace Payment;
 
-class Pay {
+class Pay
+{
+    public $options = [];
 
+    public function __construct(array $options = [])
+    {
+        $this->options = $options;
+    }
 }
