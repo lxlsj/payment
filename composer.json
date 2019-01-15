@@ -1,0 +1,13 @@
+{
+    "name": "skiy/payment",
+    "description": "聚合支付类库",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "skiy",
+            "email": "dev@skiy.net"
+        }
+    ],
+    "require": {}
+}
