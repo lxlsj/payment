@@ -3,11 +3,35 @@
     "description": "聚合支付类库",
     "type": "library",
     "license": "MIT",
+    "homepage": "https://github.com/skiy/payment",
+    "keywords": [
+        "微信",
+        "支付宝",
+        "weixin",
+        "wechat",
+        "alipay",
+    ],
     "authors": [
         {
             "name": "skiy",
             "email": "dev@skiy.net"
         }
     ],
-    "require": {}
+    "require": {
+        "php": ">=7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Payment\\": "src/"
+        }
+    },
+    "scripts": {
+        "test": [
+            "parallel-lint . --exclude vendor",
+            "phpunit"
+        ]
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5"
+    }
 }
